@@ -1,0 +1,63 @@
+<TutorialSeven>
+
+    MDFloatLayout:
+        size: root.width, root.height
+        
+        Button:
+            text: 'Click'
+            size_hint: .4, .08
+            pos_hint: {'center_x': .5, 'center_y': .9}
+            
+        Button:
+            text: 'Click'
+            size_hint: .4, .08
+            pos_hint: {'center_x': .5, 'center_y': .8}
+            background_normal: ''
+            background_color: 1, 0, 1, 1
+            
+        Button:
+            text: 'Click'
+            size_hint: .4, .08
+            pos_hint: {'center_x': .5, 'center_y': .7}
+            background_normal: ''
+            background_color: 1, 0, 1, 1
+            background_down: ''
+            
+        Button:
+            text: 'Press'
+            size_hint: .4, .08
+            pos_hint: {'center_x': .5, 'center_y': .6}
+            background_normal: ''
+            background_color: 'red'
+            on_press:
+                root.button_pressed()
+                
+        Button:
+            text: 'Release'
+            size_hint: .4, .08
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            background_normal: ''
+            background_color: 'blue'
+            on_release:
+                root.button_released()
+                
+        StartButton:
+            pos_hint: {'center_x': .5, 'center_y': .4}
+            on_release:
+                root.button_released()
+                
+        PlayButton:
+            pos_hint: {'center_x': .5, 'center_y': .26}
+            on_release:
+                root.button_released()  
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
